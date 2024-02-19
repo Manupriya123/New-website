@@ -340,7 +340,7 @@ h6 {
 }
 
 .color-brand-1 {
-  color: #024430 !important;
+  color: #000 !important;
 }
 
 .color-brand-2 {
@@ -6395,20 +6395,20 @@ footer a {
 }
 .box-banner-6 .img-testimonials-1 {
   position: absolute;
-  bottom: 210px;
-  left: -120px;
+  bottom: 230px;
+  left: -211px;
   z-index: 2;
 }
 .box-banner-6 .img-testimonials-2 {
   position: absolute;
   bottom: 20px;
-  right: 0px;
+  right: 20px;
   z-index: 4;
 }
 
 .banner-6 {
   overflow: hidden;
-  background-color: #E0F1F4;
+  background-color: #C6E0DF;
 }
 
 .box-banner-right-home6 {

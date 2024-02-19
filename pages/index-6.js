@@ -5,6 +5,8 @@ import Layout from "../components/layout/Layout";
 import Offer from "../components/slider/Offer";
 import Knowledgebase from "../components/slider/Knowledgebase";
 import Accordion from "../components/elements/Accordion";
+import Tab from "../components/elements/Tab";
+import Team from "../components/slider/Team";
 
 const HomePage6 = () => {
   const [isOpen, setOpen] = useState(false);
@@ -27,19 +29,19 @@ const HomePage6 = () => {
                 <div className="box-banner-6">
                   <div className="img-testimonials-1 shape-1">
                     <img
-                      src="assets/imgs/page/homepage6/testimonial.png"
+                      src="assets/imgs/page/homepage6/calenderr.png"
                       alt="iori"
                     />
                   </div>
                   <div className="img-testimonials-2 shape-2">
                     <img
-                      src="assets/imgs/page/homepage6/testimonial2.png"
+                      src="assets/imgs/page/homepage6//Patientss.png"
                       alt="iori"
                     />
                   </div>
                   <img
                     className="img-main"
-                    src="assets/imgs/page/homepage6/banner.png"
+                    src="assets/imgs/page/homepage6/brain.png"
                     alt="iori"
                   />
                 </div>
@@ -62,23 +64,18 @@ const HomePage6 = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="mt-30">
-                    <h5 className="color-brand-1">Available on</h5>
-                  </div>
+
                   <div className="box-button mt-20">
-                    <Link className="btn-app mb-15 hover-up" href="#">
-                      <img
-                        src="assets/imgs/template/appstore-btn.png"
-                        alt="iori"
-                      />
+                    <Link className="btn btn-brand-1 hover-up mr-20" href="#">
+                      Book Appointment
                     </Link>
-                    <Link className="btn-app mb-15 hover-up" href="#">
-                      <img
-                        src="assets/imgs/template/google-play-btn.png"
-                        alt="iori"
-                      />
+                    <Link className="btn btn-brand-1 hover-up mr-20" href="#">
+                      Book Assessment
                     </Link>
-                    <Link
+                    <Link className="btn btn-brand-1 hover-up mr-20" href="#">
+                      Order Medicine
+                    </Link>
+                    {/* <Link
                       className="btn btn-default mb-15 pl-10 font-sm-bold hover-up"
                       href="#"
                     >
@@ -97,14 +94,14 @@ const HomePage6 = () => {
                           d="M14 5l7 7m0 0l-7 7m7-7H3"
                         />
                       </svg>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <div className="section mt-55">
+        {/* <div className="section mt-55">
           <div className="container">
             <ul className="lists-logo">
               <li>
@@ -127,110 +124,15 @@ const HomePage6 = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <section className="section mt-110">
-          <div className="container">
-            <div className="row align-items-end">
-              <div className="col-lg-6 mb-20">
-                <h2 className="color-brand-1 mb-0">
-                  Crafting human connection through digital experience
-                </h2>
-              </div>
-              <div className="col-lg-6 mb-20">
-                <p className="color-grey-500 font-md mb-20">
-                  Discover powerful features to boost your productivit. You are
-                  always welcome to visit our little den. Professional in teir
-                  craft! All products were super amazing with strong attension
-                  to details, comps and overall vibe.
-                </p>
-                <Link
-                  className="btn btn-default p-0 font-sm-bold hover-up"
-                  href="#"
-                >
-                  Contact Us
-                  <svg
-                    className="w-6 h-6 icon-16 ml-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-            <div className="row mt-45">
-              <div className="col-lg-4">
-                <div className="card-human">
-                  <div className="card-image mb-15">
-                    <img
-                      src="assets/imgs/page/homepage6/human1.png"
-                      alt="iori"
-                    />
-                  </div>
-                  <div className="card-info mb-30">
-                    <h4 className="color-brand-1 mt-15 mb-10">
-                      Cross Platform
-                    </h4>
-                    <p className="font-sm color-grey-500">
-                      Discover powerful features to boost your productivit. You
-                      are always welcome to visit our little den.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="card-human">
-                  <div className="card-info mb-30">
-                    <h4 className="color-brand-1 mt-15 mb-10">
-                      Cross Platform
-                    </h4>
-                    <p className="font-sm color-grey-500">
-                      Discover powerful features to boost your productivit. You
-                      are always welcome to visit our little den.
-                    </p>
-                  </div>
-                  <div className="card-image mb-15">
-                    <img
-                      src="assets/imgs/page/homepage6/human2.png"
-                      alt="iori"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="card-human">
-                  <div className="card-image mb-15">
-                    <img
-                      src="assets/imgs/page/homepage6/human3.png"
-                      alt="iori"
-                    />
-                  </div>
-                  <div className="card-info mb-30">
-                    <h4 className="color-brand-1 mt-15 mb-10">
-                      Cross Platform
-                    </h4>
-                    <p className="font-sm color-grey-500">
-                      Discover powerful features to boost your productivit. You
-                      are always welcome to visit our little den.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div> */}
+
         <section className="section mt-100">
           <div className="container">
             <div className="row">
               <div className="col-lg-12 text-center">
-                <h2 className="color-brand-1 mb-20">What We Offer</h2>
+                <h2 className="color-brand-1 mb-20">
+                  Diverse Offerings – One Holistic Platform
+                </h2>
                 <p className="font-lg color-gray-500">
                   What makes us different from others? We give holistic
                   solutions
@@ -248,21 +150,730 @@ const HomePage6 = () => {
             </div>
           </div>
         </section>
-        <section className="section mt-50 bg-grey-80 bg-plan pt-110 pb-110">
+
+        <section className="section mt-100">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12 text-center">
+                <h2 className="color-brand-1 mb-20">
+                  Revolutionizing Mental Healthcare: Serving the Entire
+                  Ecosystem
+                </h2>
+              </div>
+            </div>
+            <div className="mt-50">
+              <div className="row">
+                <div className="col-lg-4">
+                  <div className="card-offer card-offer-2 hover-up">
+                    <div className="card-image">
+                      <img
+                        src="assets/imgs/page/homepage1/cross4.png"
+                        alt="iori"
+                      />
+                    </div>
+                    <div className="card-info">
+                      <h4 className="color-brand-1 mb-15">Individuals</h4>
+                      <p className="font-sm color-grey-500 mb-15">
+                        Free educational content and an online connection
+                        platform to match individuals with practitioners who can
+                        help
+                      </p>
+                    </div>
+                    <div className="card-image-bottom mt-50">
+                      {" "}
+                      <img
+                        className="w-100 bd-rd16"
+                        src="assets/imgs/page/homepage11/img.png"
+                        alt="iori"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4">
+                  <div className="card-offer card-offer-2 hover-up">
+                    <div className="card-image-bottom mb-35">
+                      {" "}
+                      <img
+                        className="w-100 bd-rd16"
+                        src="assets/imgs/page/homepage11/img2.png"
+                        alt="iori"
+                      />
+                    </div>
+                    <div className="card-info">
+                      <h4 className="color-brand-1 mb-15">Organisations</h4>
+                      <p className="font-sm color-grey-500 mb-15">
+                        Educational mental health content for employees and a
+                        customized connection platform to promote in-network
+                        practitioners
+                      </p>
+                      <div className="box-button-offer">
+                        <Link
+                          className="btn btn-default font-sm-bold pl-0 color-grey-900"
+                          href="#"
+                        >
+                          Contact Us
+                          <svg
+                            className="w-6 h-6 icon-16 ml-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            />
+                          </svg>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-4">
+                  <div className="card-offer card-offer-2 hover-up">
+                    <div className="card-image">
+                      <img
+                        src="assets/imgs/page/homepage11/social.png"
+                        alt="iori"
+                      />
+                    </div>
+                    <div className="card-info">
+                      <h4 className="color-brand-1 mb-15">
+                        Mental Health Experts
+                      </h4>
+                      <p className="font-sm color-grey-500 mb-15">
+                        Learning paths in various specialized competencies
+                        including symptoms, interventions, communities, and
+                        ages; shareable companion tools; and inclusion in a
+                        verified education and connection platform used by
+                        individuals seeking care
+                      </p>
+                    </div>
+                    <div className="card-image-bottom mt-50">
+                      {" "}
+                      <img
+                        className="w-100 bd-rd16"
+                        src="assets/imgs/page/homepage11/img3.png"
+                        alt="iori"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section mt-50">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-5 mb-30">
+                {" "}
+                <h2 className="color-brand-1 mt-10 mb-15">
+                  Passion for Healing Meets Power of Technology{" "}
+                </h2>
+                <p className="font-md color-grey-400">
+                  PSYMATE exists to integrate the best of psychiatry,
+                  psychology, health-tech, eastern wisdom and most importantly
+                  an unending passion for treating patients under a seamlessly
+                  delightful mental health care platform.We create holistic,
+                  customized, integrated plans and provide state-of-the-art
+                  treatments focused towards a single-minded goal - patient care
+                  at any cost.
+                </p>
+                <div className="mt-40 text-start">
+                  {" "}
+                  <Link className="btn btn-brand-1 hover-up" href="#">
+                    Download App{" "}
+                  </Link>
+                  <Link
+                    href="#"
+                    className="btn btn-default font-sm-bold hover-up"
+                  >
+                    Learn More
+                    <svg
+                      className="w-6 h-6 icon-16 ml-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+              <div className="col-lg-7 text-center position-relative mb-30">
+                <img src="/assets/imgs/page/homepage6/psymate.gif" alt="iori" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section mt-50">
           <div className="container">
             <div className="row align-items-end">
               <div className="col-lg-8 col-md-8">
-                <h2 className="color-brand-1 mb-20">Choose The Best Plan</h2>
-                <p className="font-lg color-gray-500">
-                  Pick your plan. <br className="d-none d-lg-block" /> Change
-                  whenever you want.
+                <h2 className="color-brand-1 mb-20">Disorders </h2>
+                <p>
+                  {" "}
+                  No Matter What your Mental Health Problem is At Psymate We'll
+                  Take Care Of You{" "}
                 </p>
               </div>
               <div className="col-lg-4 col-md-4 text-md-end text-start">
-                <Link
-                  className="btn btn-default font-sm-bold pl-0"
-                  href="contact"
-                >
+                <Link href="#" className="btn btn-default font-sm-bold pl-0">
+                  View All
+                  <svg
+                    className="w-6 h-6 icon-16 ml-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            <div className="row mt-55">
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="card-blog-grid card-blog-grid-2 hover-up">
+                  <div className="card-image">
+                    <Link href="/blog-detail">
+                      <img
+                        src="	https://psymate-file-uploads.s3.ap-south-1.amazonaws.com/disorders/Mask+group.png"
+                        alt="iori"
+                      />
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="/blog-detail">
+                      <h6 className="color-brand-1">Obsessive Disorder</h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="card-blog-grid card-blog-grid-2 hover-up">
+                  <div className="card-image">
+                    <Link href="/blog-detail">
+                      <img
+                        src="	https://psymate-file-uploads.s3.ap-south-1.amazonaws.com/disorders/Mask+group+(3).png"
+                        alt="iori"
+                      />
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="/blog-detail">
+                      <h6 className="color-brand-1">
+                        Social Anxiety Disorders{" "}
+                      </h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="card-blog-grid card-blog-grid-2 hover-up">
+                  <div className="card-image">
+                    <Link href="/blog-detail">
+                      <img
+                        src="https://psymate-file-uploads.s3.ap-south-1.amazonaws.com/disorders/Mask+group+(5).png"
+                        alt="iori"
+                      />
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="/blog-detail">
+                      <h6 className="color-brand-1">Bipolar Disorder </h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-3 col-lg-6 col-md-6">
+                <div className="card-blog-grid card-blog-grid-2 hover-up">
+                  <div className="card-image">
+                    <Link href="/blog-detail">
+                      <img
+                        src="https://psymate-file-uploads.s3.ap-south-1.amazonaws.com/disorders/Group+29979+(2).png"
+                        alt="iori"
+                      />
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="/blog-detail">
+                      <h6 className="color-brand-1">
+                        Major Depressive Disorder{" "}
+                      </h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section mt-100">
+          <div className="container">
+            <div className="row align-items-center mt-50">
+              <div className="col-lg-4 col-md-12 col-sm-12 mb-30">
+                {" "}
+                <h2 className="color-brand-1 mt-10 mb-20">
+                  It might seem there is no why out but trust us, there is.
+                </h2>
+                <p> It's just the matter of getting the right help</p>
+                <div className="mt-45">
+                  <Link className="btn btn-brand-1 hover-up" href="#">
+                    Download App
+                  </Link>
+                  <Link
+                    className="btn btn-default font-sm-bold hover-up"
+                    href="#"
+                  >
+                    Learn More
+                    <svg
+                      className="w-6 h-6 icon-16 ml-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M14 5l7 7m0 0l-7 7m7-7H3"
+                      />
+                    </svg>
+                  </Link>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                <div className="card-offer-style-2 card-left bg-white">
+                  <div className="card-offer hover-up">
+                    <div className="card-image">
+                      <img
+                        src="assets/imgs/page/homepage1/cross2.png"
+                        alt="iori"
+                      />
+                    </div>
+                    <div className="card-info">
+                      <h4 className="color-brand-1 mb-15">Neuromodulation</h4>
+                      <p className="font-md color-grey-500 mb-15">
+                        Discover powerful features to boost your productivit.
+                        You are always welcome to visit our little den.
+                        Professional in teir craft! All products were super
+                        amazing with strong attension to details, comps and
+                        overall vibe.
+                      </p>
+                      <div className="box-button-offer">
+                        <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                          Learn More
+                          <svg
+                            className="w-6 h-6 icon-16 ml-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                <div className="card-offer-style-2 card-left bg-grey-60">
+                  <div className="card-offer hover-up">
+                    <div className="card-image">
+                      <img
+                        src="assets/imgs/page/homepage1/cross.png"
+                        alt="iori"
+                      />
+                    </div>
+                    <div className="card-info">
+                      <h4 className="color-brand-1 mb-15">Psychotherapy</h4>
+                      <p className="font-md color-grey-500 mb-15">
+                        Discover powerful features to boost your productivit.
+                        You are always welcome to visit our little den.
+                        Professional in teir craft! All products were super
+                        amazing with strong attension to details, comps and
+                        overall vibe.
+                      </p>
+                      <div className="box-button-offer">
+                        <a className="btn btn-default font-sm-bold pl-0 color-brand-1">
+                          Learn More
+                          <svg
+                            className="w-6 h-6 icon-16 ml-5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M14 5l7 7m0 0l-7 7m7-7H3"
+                            />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-2 col-md-4 col-sm-6 col-12">
+                <div className="card-small">
+                  <div className="card-image">
+                    <Link href="#">
+                      <div className="box-image">
+                        <img
+                          src="assets/imgs/page/homepage3/certification.png"
+                          alt="iori"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="#">
+                      <h6 className="color-brand-1 icon-up">Medication</h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-4 col-sm-6 col-12">
+                <div className="card-small">
+                  <div className="card-image">
+                    <Link href="#">
+                      <div className="box-image">
+                        <img
+                          src="assets/imgs/page/homepage3/conference.png"
+                          alt="iori"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="#">
+                      <h6 className="color-brand-1 icon-up">Counselling</h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-4 col-sm-6 col-12">
+                <div className="card-small">
+                  <div className="card-image">
+                    <Link href="#">
+                      <div className="box-image">
+                        <img
+                          src="assets/imgs/page/homepage3/research.png"
+                          alt="iori"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="#">
+                      <h6 className="color-brand-1 icon-up">rTMS</h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-4 col-sm-6 col-12">
+                <div className="card-small">
+                  <div className="card-image">
+                    <Link href="#">
+                      <div className="box-image">
+                        <img
+                          src="assets/imgs/page/homepage3/dispersal.png"
+                          alt="iori"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="#">
+                      <h6 className="color-brand-1 icon-up">
+                        Art Based Therapy
+                      </h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-4 col-sm-6 col-12">
+                <div className="card-small">
+                  <div className="card-image">
+                    <Link href="#">
+                      <div className="box-image">
+                        <img
+                          src="assets/imgs/page/homepage3/enterprise.png"
+                          alt="iori"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="#">
+                      <h6 className="color-brand-1 icon-up">Yoga</h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-2 col-md-4 col-sm-6 col-12">
+                <div className="card-small">
+                  <div className="card-image">
+                    <Link href="#">
+                      <div className="box-image">
+                        <img
+                          src="assets/imgs/page/homepage3/team-building.png"
+                          alt="iori"
+                        />
+                      </div>
+                    </Link>
+                  </div>
+                  <div className="card-info">
+                    <Link href="#">
+                      <h6 className="color-brand-1 icon-up">Wellness</h6>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div className="mt-80">
+          <div className="box-swiper">
+            <div className="swiper-container swiper-group-7-center">
+              <Team />
+            </div>
+          </div>
+        </div>
+
+        <section className="section mt-90">
+          <div className="container">
+            <div className="text-center">
+              <h2 className="color-brand-1 mb-20">
+                Everything will become One
+              </h2>
+              <p className="font-lg color-grey-500">
+                {" "}
+                <Link className="font-lg-bold color-brand-1" href="#">
+                  Iori Platform{" "}
+                </Link>
+                lets you take control of your money, balance your{" "}
+                <br className="d-none d-lg-block" />
+                income and expenses, and understand where your money goes.
+              </p>
+            </div>
+            <div className="row mt-75 align-items-center">
+              <div className="col-lg-4 mb-30">
+                <div className="card-become">
+                  <div className="card-title text-end">
+                    <h6 className="color-brand-1 mb-15">
+                      {" "}
+                      <span>Total control</span>
+                      <img
+                        className="ml-15"
+                        src="/assets/imgs/page/homepage8/icon1.png"
+                        alt="iori"
+                      />
+                    </h6>
+                  </div>
+                  <div className="card-desc">
+                    <p className="text-end color-grey-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus malesuada felis eget finibus placerat. Aliquam sit
+                      amet vestibulum felis, sit amet porta neque
+                    </p>
+                  </div>
+                </div>
+                <div className="card-become">
+                  <div className="card-title text-end">
+                    <h6 className="color-brand-1 mb-15">
+                      {" "}
+                      <span>Rapid experimentation</span>
+                      <img
+                        className="ml-15"
+                        src="/assets/imgs/page/homepage8/icon2.png"
+                        alt="iori"
+                      />
+                    </h6>
+                  </div>
+                  <div className="card-desc">
+                    <p className="text-end color-grey-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus malesuada felis eget finibus placerat. Aliquam sit
+                      amet vestibulum felis, sit amet porta neque
+                    </p>
+                  </div>
+                </div>
+                <div className="card-become">
+                  <div className="card-title text-end">
+                    <h6 className="color-brand-1 mb-15">
+                      {" "}
+                      <span>Secure transfer</span>
+                      <img
+                        className="ml-15"
+                        src="/assets/imgs/page/homepage8/icon3.png"
+                        alt="iori"
+                      />
+                    </h6>
+                  </div>
+                  <div className="card-desc">
+                    <p className="text-end color-grey-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus malesuada felis eget finibus placerat. Aliquam sit
+                      amet vestibulum felis, sit amet porta neque
+                    </p>
+                  </div>
+                </div>
+                <div className="card-become">
+                  <div className="card-title text-end">
+                    <h6 className="color-brand-1 mb-15">
+                      {" "}
+                      <span>Activity statistics</span>
+                      <img
+                        className="ml-15"
+                        src="/assets/imgs/page/homepage8/icon4.png"
+                        alt="iori"
+                      />
+                    </h6>
+                  </div>
+                  <div className="card-desc">
+                    <p className="text-end color-grey-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus malesuada felis eget finibus placerat. Aliquam sit
+                      amet vestibulum felis, sit amet porta neque
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 mb-30 text-center">
+                <img src="/assets/imgs/page/homepage8/phone2.png" alt="iori" />
+              </div>
+              <div className="col-lg-4 mb-30">
+                <div className="card-become">
+                  <div className="card-title text-start">
+                    <h6 className="color-brand-1 mb-15">
+                      {" "}
+                      <img
+                        className="mr-15"
+                        src="/assets/imgs/page/homepage8/icon5.png"
+                        alt="iori"
+                      />
+                      <span>Track your spending</span>
+                    </h6>
+                  </div>
+                  <div className="card-desc">
+                    <p className="text-start color-grey-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus malesuada felis eget finibus placerat. Aliquam sit
+                      amet vestibulum felis, sit amet porta neque
+                    </p>
+                  </div>
+                </div>
+                <div className="card-become">
+                  <div className="card-title text-start">
+                    <h6 className="color-brand-1 mb-15">
+                      {" "}
+                      <img
+                        className="mr-15"
+                        src="/assets/imgs/page/homepage8/icon6.png"
+                        alt="iori"
+                      />
+                      <span>Fast Response</span>
+                    </h6>
+                  </div>
+                  <div className="card-desc">
+                    <p className="text-start color-grey-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus malesuada felis eget finibus placerat. Aliquam sit
+                      amet vestibulum felis, sit amet porta neque
+                    </p>
+                  </div>
+                </div>
+                <div className="card-become">
+                  <div className="card-title text-start">
+                    <h6 className="color-brand-1 mb-15">
+                      {" "}
+                      <img
+                        className="mr-15"
+                        src="/assets/imgs/page/homepage8/icon7.png"
+                        alt="iori"
+                      />
+                      <span>AI automation</span>
+                    </h6>
+                  </div>
+                  <div className="card-desc">
+                    <p className="text-start color-grey-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus malesuada felis eget finibus placerat. Aliquam sit
+                      amet vestibulum felis, sit amet porta neque
+                    </p>
+                  </div>
+                </div>
+                <div className="card-become">
+                  <div className="card-title text-start">
+                    <h6 className="color-brand-1 mb-15">
+                      {" "}
+                      <img
+                        className="mr-15"
+                        src="/assets/imgs/page/homepage8/icon8.png"
+                        alt="iori"
+                      />
+                      <span>Budget that works</span>
+                    </h6>
+                  </div>
+                  <div className="card-desc">
+                    <p className="text-start color-grey-500">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Vivamus malesuada felis eget finibus placerat. Aliquam sit
+                      amet vestibulum felis, sit amet porta neque
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="border-bottom mt-100" />
+        </section>
+
+        <section className="section mt-50 bg-7 bg-plan pt-110 pb-110">
+          <div className="container">
+            <div className="row align-items-end">
+              <div className="col-lg-8 col-md-8">
+                <h2 className="color-brand-1 mb-20">
+                  Choose The Best Assessment Plan
+                </h2>
+                <p className="font-lg color-gray-500">
+                  Pick your plan. <br className="d-none d-lg-block" />
+                  Change whenever you want.
+                </p>
+              </div>
+              <div className="col-lg-4 col-md-4 text-md-end text-start">
+                <Link className="btn btn-default font-sm-bold pl-0" href="#">
                   Compare plans
                   <svg
                     className="w-6 h-6 icon-16 ml-5"
@@ -287,12 +898,12 @@ const HomePage6 = () => {
                   <div className="card-image-plan">
                     <div className="icon-plan">
                       <img
-                        src="assets/imgs/page/homepage1/free.svg"
+                        src="/assets/imgs/page/homepage1/free.svg"
                         alt="iori"
                       />
                     </div>
                     <div className="info-plan">
-                      <h4 className="color-brand-1">Trial Plan</h4>
+                      <h4 className="color-brand-1">Focused</h4>
                       <p className="font-md color-grey-400">
                         Protect for testing
                       </p>
@@ -474,12 +1085,12 @@ const HomePage6 = () => {
                   <div className="card-image-plan">
                     <div className="icon-plan bg-1">
                       <img
-                        src="assets/imgs/page/homepage1/standard.svg"
+                        src="/assets/imgs/page/homepage1/standard.svg"
                         alt="iori"
                       />
                     </div>
                     <div className="info-plan">
-                      <h4 className="color-brand-1">Standard</h4>
+                      <h4 className="color-brand-1">Detailed</h4>
                       <p className="font-md color-grey-400">Advanced project</p>
                     </div>
                   </div>
@@ -659,12 +1270,12 @@ const HomePage6 = () => {
                   <div className="card-image-plan">
                     <div className="icon-plan bg-2">
                       <img
-                        src="assets/imgs/page/homepage1/business.svg"
+                        src="/assets/imgs/page/homepage1/business.svg"
                         alt="iori"
                       />
                     </div>
                     <div className="info-plan">
-                      <h4 className="color-brand-1">Business</h4>
+                      <h4 className="color-brand-1">Advance</h4>
                       <p className="font-md color-grey-400">
                         Protect for testing
                       </p>
@@ -844,12 +1455,12 @@ const HomePage6 = () => {
                   <div className="card-image-plan">
                     <div className="icon-plan bg-3">
                       <img
-                        src="assets/imgs/page/homepage2/creation.png"
+                        src="/assets/imgs/page/homepage2/creation.png"
                         alt="iori"
                       />
                     </div>
                     <div className="info-plan">
-                      <h4 className="color-brand-1">Enterprise</h4>
+                      <h4 className="color-brand-1">Comprehensive</h4>
                       <p className="font-md color-grey-400">
                         Protect for testing
                       </p>
@@ -1027,60 +1638,18 @@ const HomePage6 = () => {
             </div>
           </div>
         </section>
-        <section className="section mt-50 pt-50 pb-40">
+
+        <section className="section mt-50 mb-50 bg-brand-1 pt-100 pb-100 bg-explore">
           <div className="container">
-            <div className="box-cover-border">
-              <div className="row align-items-center">
-                <div className="col-lg-6">
-                  <img
-                    className="d-block"
-                    src="assets/imgs/page/homepage2/img-marketing.png"
-                    alt="iori"
-                  />
-                </div>
-                <div className="col-lg-6">
-                  <div className="box-info-video">
-                    <span className="btn btn-tag">Get in touch</span>
-                    <h2 className="color-brand-1 mt-15 mb-20">
-                      Want to talk to a marketing expert?
-                    </h2>
-                    <p className="font-md color-grey-500">
-                      Excepteur sint occaecat cupidatat non proident, sunt in
-                      culpa qui officia deserunt mollit laborum — semper quis
-                      lectus nulla. Interactively transform magnetic growth
-                      strategies whereas prospective "outside the box" thinking.
-                    </p>
-                    <div className="box-button text-start mt-65">
-                      <Link className="btn btn-brand-1 hover-up" href="#">
-                        Contact Us
-                      </Link>
-                      <Link
-                        className="btn btn-default font-sm-bold hover-up"
-                        href="#"
-                      >
-                        Support Center
-                        <svg
-                          className="w-6 h-6 icon-16 ml-5"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M14 5l7 7m0 0l-7 7m7-7H3"
-                          />
-                        </svg>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="text-center">
+              <h2 className="color-brand-2 mb-60 mt-15">Psymate Times</h2>
+            </div>
+            <div className="mt-30 mb-60">
+              <Tab />
             </div>
           </div>
         </section>
+
         <section className="section pt-80 mb-30">
           <div className="container">
             <div className="text-center">
@@ -1116,320 +1685,9 @@ const HomePage6 = () => {
             </div>
           </div>
         </section>
-        <section className="section mt-40 pt-50 pb-15 bg-grey-80">
-          <div className="container">
-            <div className="box-swiper">
-              <div className="swiper-container swiper-group-3">
-                <Knowledgebase />
-              </div>
-            </div>
-          </div>
-        </section>
+
         <div className="mt-50" />
-        <section className="section mt-50">
-          <div className="container">
-            <div className="row align-items-end">
-              <div className="col-lg-8 col-md-8">
-                <h2 className="color-brand-1 mb-20">From our blog </h2>
-                <p className="font-lg color-gray-500">
-                  Aenean velit nisl, aliquam eget diam eu, rhoncus tristique
-                  dolor.
-                  <br className="d-none d-lg-block" />
-                  Aenean vulputate sodales urna ut vestibulum
-                </p>
-              </div>
-              <div className="col-lg-4 col-md-4 text-md-end text-start">
-                <Link className="btn btn-default font-sm-bold pl-0" href="blog">
-                  View All
-                  <svg
-                    className="w-6 h-6 icon-16 ml-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M14 5l7 7m0 0l-7 7m7-7H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-            <div className="row mt-55">
-              <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="card-blog-grid card-blog-grid-2 hover-up">
-                  <div className="card-image">
-                    <Link href="blog-detail">
-                      <img
-                        src="assets/imgs/page/homepage2/news1.png"
-                        alt="iori"
-                      />
-                    </Link>
-                  </div>
-                  <div className="card-info">
-                    <Link href="blog-detail">
-                      <h6 className="color-brand-1">
-                        Easy Ways to Make Money While You Sleep
-                      </h6>
-                    </Link>
-                    <p className="font-sm color-grey-500 mt-20">
-                      Fusce dictum ullamcorper dui, id dignissim arcu volutpat
-                      vitae. Aenean mattis vestibulum odio eu facilisis. Aenean
-                      quam arcu, blandit at aliquet sit amet, convallis nec
-                      risus.
-                    </p>
-                    <div className="mt-20 d-flex align-items-center border-top pt-20">
-                      <Link
-                        className="btn btn-border-brand-1 mr-15"
-                        href="blog"
-                      >
-                        Technology
-                      </Link>
-                      <span className="date-post font-xs color-grey-300 mr-15">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                          />
-                        </svg>
-                        29 May 2022
-                      </span>
-                      <span className="time-read font-xs color-grey-300">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        3 mins read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="card-blog-grid card-blog-grid-2 hover-up">
-                  <div className="card-image">
-                    <Link href="blog-detail">
-                      <img
-                        src="assets/imgs/page/homepage2/news2.png"
-                        alt="iori"
-                      />
-                    </Link>
-                  </div>
-                  <div className="card-info">
-                    <Link href="blog-detail">
-                      <h6 className="color-brand-1">
-                        Tiktok video size guide: Everything you need to know
-                      </h6>
-                    </Link>
-                    <p className="font-sm color-grey-500 mt-20">
-                      Fusce dictum ullamcorper dui, id dignissim arcu volutpat
-                      vitae. Aenean mattis vestibulum odio eu facilisis. Aenean
-                      quam arcu, blandit at aliquet sit amet, convallis nec
-                      risus.
-                    </p>
-                    <div className="mt-20 d-flex align-items-center border-top pt-20">
-                      <Link
-                        className="btn btn-border-brand-1 mr-15"
-                        href="blog"
-                      >
-                        Marketting
-                      </Link>
-                      <span className="date-post font-xs color-grey-300 mr-15">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                          />
-                        </svg>
-                        29 May 2022
-                      </span>
-                      <span className="time-read font-xs color-grey-300">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        3 mins read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="card-blog-grid card-blog-grid-2 hover-up">
-                  <div className="card-image">
-                    <Link href="blog-detail">
-                      <img
-                        src="assets/imgs/page/homepage1/news2.png"
-                        alt="iori"
-                      />
-                    </Link>
-                  </div>
-                  <div className="card-info">
-                    <Link href="blog-detail">
-                      <h6 className="color-brand-1">
-                        How to convert video to MP4 for free online
-                      </h6>
-                    </Link>
-                    <p className="font-sm color-grey-500 mt-20">
-                      Fusce dictum ullamcorper dui, id dignissim arcu volutpat
-                      vitae. Aenean mattis vestibulum odio eu facilisis. Aenean
-                      quam arcu, blandit at aliquet sit amet, convallis nec
-                      risus.
-                    </p>
-                    <div className="mt-20 d-flex align-items-center border-top pt-20">
-                      <Link
-                        className="btn btn-border-brand-1 mr-15"
-                        href="blog"
-                      >
-                        Media
-                      </Link>
-                      <span className="date-post font-xs color-grey-300 mr-15">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                          />
-                        </svg>
-                        29 May 2022
-                      </span>
-                      <span className="time-read font-xs color-grey-300">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        3 mins read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-xl-3 col-lg-6 col-md-6">
-                <div className="card-blog-grid card-blog-grid-2 hover-up">
-                  <div className="card-image">
-                    <Link href="blog-detail">
-                      <img
-                        src="assets/imgs/page/homepage2/news3.png"
-                        alt="iori"
-                      />
-                    </Link>
-                  </div>
-                  <div className="card-info">
-                    <Link href="blog-detail">
-                      <h6 className="color-brand-1">
-                        5 fastest ways to increase search engine rankings
-                      </h6>
-                    </Link>
-                    <p className="font-sm color-grey-500 mt-20">
-                      Fusce dictum ullamcorper dui, id dignissim arcu volutpat
-                      vitae. Aenean mattis vestibulum odio eu facilisis. Aenean
-                      quam arcu, blandit at aliquet sit amet, convallis nec
-                      risus.
-                    </p>
-                    <div className="mt-20 d-flex align-items-center border-top pt-20">
-                      <Link
-                        className="btn btn-border-brand-1 mr-15"
-                        href="blog"
-                      >
-                        SEO
-                      </Link>
-                      <span className="date-post font-xs color-grey-300 mr-15">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                          />
-                        </svg>
-                        29 May 2022
-                      </span>
-                      <span className="time-read font-xs color-grey-300">
-                        <svg
-                          className="w-6 h-6 icon-16"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                          />
-                        </svg>
-                        3 mins read
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
         <section className="section mt-50">
           <div className="container">
             <div className="box-newsletter box-newsletter-2">

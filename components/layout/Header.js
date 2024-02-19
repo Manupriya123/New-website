@@ -298,6 +298,9 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                         </ul>
                       </div>
                     </li>
+                    <li>
+                      <Link href="/index-6">Home</Link>
+                    </li>
                     <li className="has-children">
                       <Link href="#">Company</Link>
                       <ul className="sub-menu">
