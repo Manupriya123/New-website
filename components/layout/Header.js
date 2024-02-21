@@ -36,7 +36,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
               <div className="header-nav">
                 <nav className="nav-main-menu d-none d-xl-block">
                   <ul className="main-menu">
-                    <li className="has-children">
+                    {/* <li className="has-children">
                       <Link className="active" href="/">
                         Home
                       </Link>
@@ -297,11 +297,48 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                           </li>
                         </ul>
                       </div>
-                    </li>
+                    </li> */}
                     <li>
-                      <Link href="/index-6">Home</Link>
+                      <Link href="/">Home</Link>
                     </li>
+
+                    <li>
+                      <Link href="/about-us">About</Link>
+                    </li>
+
+                    <li>
+                      <Link href="/">Offerings</Link>
+                    </li>
+
+                    <li>
+                      <Link href="/">Disorders</Link>
+                    </li>
+
                     <li className="has-children">
+                      <Link href="#">Treatments</Link>
+                      <ul className="sub-menu">
+                        <li>
+                          <Link href="/register">Neuromodulation</Link>
+                        </li>
+                        <li>
+                          <Link href="/register">Psychotherapy</Link>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <Link href="/register">Experts</Link>
+                    </li>
+
+                    <li>
+                      <Link href="/register">Outreach</Link>
+                    </li>
+
+                    <li>
+                      <Link href="/register">Connect</Link>
+                    </li>
+
+                    {/* <li className="has-children">
                       <Link href="#">Company</Link>
                       <ul className="sub-menu">
                         <li>
@@ -384,7 +421,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     </li>
                     <li>
                       <Link href="/contact">Contact</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </nav>
                 <div
@@ -454,7 +491,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                     </svg>
                   </span>
                 </div>
-                <div
+                {/* <div
                   className="d-inline-block box-dropdown-cart"
                   onClick={toggleLanguageTrueFalse}
                 >
@@ -500,7 +537,7 @@ const Header = ({ handleOpen, handleRemove, openClass, addClass }) => {
                       </li>
                     </ul>
                   </div>
-                </div>
+                </div> */}
                 <div className="d-none d-sm-inline-block">
                   <Link className="btn btn-brand-1 hover-up" href="register">
                     Get Started
